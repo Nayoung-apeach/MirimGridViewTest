@@ -15,6 +15,8 @@ public class GridAdapter extends BaseAdapter {
             R.drawable.f,R.drawable.g,R.drawable.h,R.drawable.i,R.drawable.j,
             R.drawable.k,R.drawable.l,R.drawable.m,R.drawable.n,R.drawable.o,R.drawable.p
     };
+    String[] titleRes = {"최현석", "박지훈", "요시", "김준규", "마시호", "윤재혁", "아사히", "방예담",
+            "김도영", " 하루토", "박정우", "소정환"};
 
     public GridAdapter(Context context){
         this.context = context;
@@ -50,8 +52,8 @@ public class GridAdapter extends BaseAdapter {
                 AlertDialog.Builder dlg = new AlertDialog.Builder(context);
                 ImageView imgvPoster = dialogView.findViewById(R.id.imgv_dialog);
                 imgvPoster.setImageResource(imgRes[pos]);
-                dlg.setTitle("큰 포스터");
-                dlg.setIcon(R.mipmap.ic_launcher);
+                dlg.setTitle(titleRes[pos]);
+                dlg.setIcon(R.mipmap.diamonds);
                 dlg.setView(dialogView);
                 dlg.setNegativeButton("닫기", null);
                 dlg.show();
