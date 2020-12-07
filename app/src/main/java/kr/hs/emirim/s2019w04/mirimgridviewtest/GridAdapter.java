@@ -16,7 +16,7 @@ public class GridAdapter extends BaseAdapter {
             R.drawable.k,R.drawable.l,R.drawable.m,R.drawable.n,R.drawable.o,R.drawable.p
     };
     String[] titleRes = {"최현석", "박지훈", "요시", "김준규", "마시호", "윤재혁", "아사히", "방예담",
-            "김도영", " 하루토", "박정우", "소정환"};
+            "김도영", " 하루토", "박정우", "소정환", "D-4", "D-3", "D-1", "TREASURE"};
 
     public GridAdapter(Context context){
         this.context = context;
